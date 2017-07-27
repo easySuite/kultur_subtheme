@@ -1,0 +1,4 @@
+name = kultur_subtheme
+description = KulturØen
+core = 7.x
+base theme = ddbasic
