@@ -1,0 +1,77 @@
+/* Event calendar styles
+   ========================================================================== */
+
+.pane-ding-event-calendar-ding-event-calendar {
+  #eventsCalendar {
+    .navi-heading a {
+      background-color: $label-bg-color;
+      color: $label-text-color;
+    }
+
+    h2 {
+      text-transform: lowercase;
+      color: $label-text-color;
+      font-weight: bold;
+    }
+
+    #calendar{
+      .calendar-row {
+        .calendar-day-head {
+          background-color: #d5d5d5;
+          color: $label-text-color;
+          text-transform: lowercase;
+          font-weight: bold;
+        }
+
+        .calendar-day-np {
+          background-color: #f2f2f2;
+        }
+
+        .calendar-day {
+          background-color: #d5d5d5;    
+          color: $white;
+          text-decoration: underline;
+          border-color: #bbbbbb;
+        }
+
+        .has-events {
+          background-color: #999999;
+        }
+
+        td.calendar-day.has-events.selected {
+          background-color: $label-bg-color;
+
+          a {
+            color: $label-text-color;
+          }
+        }
+      }
+    }
+  }
+
+  #eventList {
+    .event-day-header {
+      color: $label-text-color;
+    }
+    .event-items {
+      .event-item {
+        background-color: #999999;
+        border-bottom: 1px solid #bbbbbb;
+      }
+
+      .event-time {
+        color: $white;
+      }
+
+      .event-title a {
+        color: $label-bg-color;
+        text-decoration: none;
+        font-weight: bold;
+      }
+    }
+
+    .more-link a {
+      font-weight: bold;
+    }
+  }
+}

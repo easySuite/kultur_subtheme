@@ -1,0 +1,99 @@
+/*
+* Contrybuted by MS
+*/
+
+#page {
+  height: 100%;
+  background-image: url("../background-img.png");
+}
+
+.frontpage-layout {
+  background: $white;
+}
+
+.topbar,
+.navigation-wrapper {
+  background: transparent;
+}
+
+body {
+  height: 100%;
+  //color: $body-background-color;
+}
+
+.topbar-menu {
+  display: none;
+}
+
+// Links color
+
+a {
+  &:link {
+    color: $link-color;
+  }
+
+  &:visited {
+    color: $link-color;
+  }
+
+  &:hover,
+  &:focus {
+    color: $link-color-hover;
+  }
+}
+
+.header-wrapper {
+  background: $white;
+  height: 0;
+
+  .header-inner {
+    .search {
+      display: none;
+    }
+  }
+}
+
+section .search {
+  #edit-submit {
+    border-radius: 0;
+    background: $button-default-background;
+  }
+
+  .form-item-search-block-form {
+    display: none;
+  }
+}
+
+.bottom {
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+
+
+  .pane-content p {
+    margin-bottom: 0;
+    margin-top: 0;
+    background: $white;
+    color: #999999;
+  }
+
+  a {
+    color: #999999;
+  }
+}
+
+.footer {
+  background: transparent;
+
+  div.footer-inner > div.pane-block {
+    background: $white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .menu li a.active {
+    color: $label-text-color;
+  }
+}

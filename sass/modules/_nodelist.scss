@@ -1,0 +1,82 @@
+/* Ding nodelist styles
+   ========================================================================== */
+
+.ding_nodelist-carousel {
+  padding-top: 20px;
+}
+
+.ding_nodelist {
+  .event-time .event-day,
+  .label a,
+  .pagination a.selected {
+    background-color: $label-bg-color;
+    color: $label-text-color;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .pagination {
+    top: 30px;
+
+    a {
+      background-color: $white;
+  
+      span {
+       color: $label-text-color;
+      }
+    }
+  }
+
+  .event-date,
+  .event-month {
+    color: $label-text-color;
+  }
+
+  .event-date{
+    font-weight: bold;
+  }
+
+  .field-name-field-ding-news-library {
+    .field-item a {
+      color: $label-bg-color;
+    }
+  }
+
+  .library a {
+    color: $label-bg-color;
+    text-decoration: underline;
+  }
+
+  h3.node-title {
+    font-size: 40px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+  .node {
+    .item-date,
+    .library a,
+    .item-price {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .ding_nodelist-items{
+
+    h2.item-title a {
+      color: $label-text-color;
+      font-weight: bold;
+    }
+
+    .date,
+    .author,
+    .item-body {
+      color: $label-text-color;
+    }
+  }
+}

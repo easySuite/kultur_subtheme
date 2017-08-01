@@ -1,4 +1,13 @@
-name = kultur_subtheme
-description = KulturØen
+name = Midelfart KulturØen
+description = KulturØen subtheme
 core = 7.x
 base theme = ddbasic
+
+;-------------------- C S S -----------------------
+
+stylesheets[all][] = css/styles.css
+
+;-------------------- J S -----------------------
+
+scripts[] = js/kultur.js
+

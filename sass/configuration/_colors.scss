@@ -1,0 +1,73 @@
+/**
+ * Colors that can be configured through theme settings.
+ *
+ * Every color settings MUST be in HEX format..
+ * @author magnify
+ */
+
+
+/* Body */ 
+$body-background-color:           #ffffff !default;
+
+/* Topbar */
+$topbar-background-color:         #2f2f2f !default;
+$topbar-text-color:               #4b4b4b !default;
+ 
+/* Header */
+$header-background-color:         #c7d650 !default;
+
+/* Navigation */
+$menu-item-1-background-color:    #a84598 !default;
+$menu-item-2-background-color:    #178498 !default;
+$menu-item-3-background-color:    #86a0c3 !default;
+$menu-item-4-background-color:    #c3be2c !default;
+$navigation-background-color:     #4b4b4b !default;
+$navigation-text-color:           #c7d650 !default;
+$navigation-text-color-active:    #ffffff !default;
+
+/* Tabroll */
+$tabroll-background-color:        #a32e10 !default;
+
+/* Links */
+$link-color:                      #2f2b2c !default;
+$link-color-hover:                #a6d6cc !default;
+
+/* Labels */
+$label-bg-color:                  #a6d6cc !default;
+$label-bg-color-hover:            #8db7ae !default;
+$label-text-color:                #221e1f !default;
+$label-text-color-hover:          #221e1f !default;
+
+
+/* Content */
+$content-background-color:        #fffffe !default;
+
+/* List */
+$list-background-color:             #e4e100 !default;
+$list-item-background-color-odd:  	#797979 !default;
+$list-item-background-color-even: 	#797979 !default;
+$list-text-color:                   #4c4c4c !default;
+$list-item-active-color:            #525043 !default;
+
+
+/* Footer */
+$footer-background-color:         #ffffff !default;
+$footer-text-color:               #020202 !default;
+
+/* Buttons */
+$button-default-background:       #a6d6cc !default;
+$button-default-background-gradient: #1e1e1f !default;
+$button-default-color-hover:      #8db7ae !default;
+$button-default-text-color:       #221e1f !default;
+
+/* Dialog box */
+$dialog-background: #00cafd !default;
+$dialog-text: #000003 !default;
+
+
+/* Funny facts */
+
+/* Carousel */
+$carousel-background:             #d8d8d8 !default;
+$carousel-tab-background:         #7f7f7f !default;
+$carousel-tab-active-background:  #b7b7b5 !default;
