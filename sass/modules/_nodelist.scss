@@ -7,7 +7,6 @@
 
 .ding_nodelist {
   .event-time .event-day,
-  .label a,
   .pagination a.selected {
     background-color: $label-bg-color;
     color: $label-text-color;
@@ -71,6 +70,7 @@
     h2.item-title a {
       color: $label-text-color;
       font-weight: bold;
+      font-size: 16px;
     }
 
     .date,

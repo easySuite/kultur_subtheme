@@ -20,42 +20,60 @@
 // Navigation, main menu and secondary menu
 //==========================================================================
 
-.main-menu {
-  background-color: #e8e7e7;
+.main-menu-wrapper {
+  width: 100%;
+  padding-left: 0;
+  padding-right: 0;
 
-  .menu-item {
-    color: #454545;
-    font-weight: 300;
+  .main-menu {
+    background-color: #e8e7e7;
+    padding-left: 30px;
 
-    &:hover,
-    &.active {
-      color: $link-color-hover;
+    .menu-item {
+      color: #454545;
+      font-weight: 300;
+
+      &:hover,
+      &.active {
+        color: $link-color-hover;
+      }
     }
   }
 }
 
-.secondary-menu {
-  background-color: #a6d6cc;
-  float: none;
-  position: absolute;
-  right: 0;
-  z-index: 10000;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  top: -12px;
-  padding-left: 20px;
-  transform: matrix3d( 0.847004591975453, 0, 0, -0.00022844866888314, -0.10298881354468103, 0.8130695806159028, 0, -0.00039348961759940696, 0, 0, 1, 0, 0, 0, 0, 1 );
+.secondary-menu-wrapper {
+  min-width: 600px;
+  padding-right: 0;
 
-  li {
-    padding: 0 18px;
-    border-right: 1px solid #959595;
+  .secondary-menu {
+    background-color: #a6d6cc;
+    float: none;
+    position: absolute;
+    right: 0;
+    padding-top: 10px;
+    top: -12px;
 
-    a.menu-item {
-      text-transform: uppercase;
-      color: #474747;
-      font-weight: bold;
+    li {
+      padding: 0 18px;
+      border-right: 1px solid #959595;
+
+      a.menu-item {
+        text-transform: uppercase;
+        color: #474747;
+        font-weight: bold;
+        font-size: 14px;
+      }
     }
   }
+
+  .transform {
+    background-color: #a6d6cc;
+    transform: matrix3d(0.950, 0, 0, -0.00060, -0.10300, 0.81307, 0, -0.00070, 0, 0, 1, 0, 0, 0, 0, 1);
+    height: 90px;
+    width: 623px;
+    margin-top: -15px;
+    margin-left: 6px;
+    }
 }
 
 .system-user-menu {
@@ -71,14 +89,22 @@
 //==========================================================================
 
 .sub-menu {
-
   > li {
+    &:before {
+      content: none;
+    }
 
     a {
-      color: $link-color;
+      color: $list-text-color;
+      padding-left: 20px;
 
       &:hover {
         color: $link-color-hover;
+      }
+
+      &.active {
+        background-color: $label-bg-color;
+        margin-left: 0px;
       }
     }
   }
@@ -104,14 +130,15 @@
 
     li {
       &:before {
-        color: $footer-text-color;
+        content: none;
       }
 
       a {
         color: $footer-text-color;
+        padding-left: 0;
 
         &.active {
-          color: $link-color-hover;
+          color: $label-text-color;
         }
       }
     }
@@ -130,4 +157,9 @@
       color: $link-color;
     }
   }
+}
+
+.field-slideshow-controls a.prev,
+.field-slideshow-controls a.next {
+  color: $label-bg-color;
 }

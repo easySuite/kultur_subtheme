@@ -4,7 +4,20 @@
 
 #page {
   height: 100%;
-  background-image: url("../background-img.png");
+  background-image: url("../background.png");
+  background-repeat: repeat-x;
+}
+
+.logo {
+  margin-bottom: 25px;
+}
+
+.site-name {
+  top: 11px;
+  position: absolute;
+  left: 137px;
+  font-size: 19px;
+  font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
 }
 
 .frontpage-layout {
@@ -22,7 +35,7 @@ body {
 }
 
 .topbar-menu {
-  display: none;
+ // display: none;
 }
 
 // Links color
@@ -63,19 +76,17 @@ section .search {
     display: none;
   }
 }
-
 .bottom {
   background: transparent;
   padding-top: 0;
   padding-bottom: 0;
   max-width: 1200px;
   margin: 0 auto;
-
+  background-color: $white;
 
   .pane-content p {
     margin-bottom: 0;
     margin-top: 0;
-    background: $white;
     color: #999999;
   }
 
@@ -84,16 +95,151 @@ section .search {
   }
 }
 
-.footer {
-  background: transparent;
+#page {
+  .footer {
+    padding-top: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: $white;
 
-  div.footer-inner > div.pane-block {
-    background: $white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    div.footer-inner > div.pane-block {
+      background: $white;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.content-wrapper {
+  margin-top: 0;
+}
+
+.not-front {
+  .pane-page-content {
+     background-color: $white;
+     margin-bottom: 20px;
+  }
+}
+
+.default-layout {
+  margin-top: 0px;
+}
+
+.layout-wrapper {
+  /*
+  transform: matrix3d( 1.0076628352490422, 0, 0, 0, 0.023255813953488372, 1.0076628352490422, 0, 0.00004455136772698922, 0, 0, 1, 0, 18, 42, 0, 1 );
+
+  matrix3d(1.01149, 0, 0, 0, 0.01746, 1.01149, 0, 0.00004, 0, 0, 1, 0, 10, 0, 0, 1)
+  matrix3d( 1.0076628352490422, 0, 0, 0, 0.023255813953488372, 1.0076628352490422, 0, 0.00004455136772698922, 0, 0, 1, 0, 18, 42, 0, 1 ) */
+
+}
+
+.label a {
+  background-color: $label-bg-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $label-text-color;
+  border-radius: 4px;
+
+  &:hover {
+    background-color: $label-bg-color-hover;
   }
 
-  .menu li a.active {
+  &:link {
     color: $label-text-color;
+  }
+}
+
+.label a:link,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a a:link,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:link,
+.subjects .subject a:link, .news-list .news-label a:link,
+.super-heading .field-name-field-ding-news-library .field-item a:link,
+.label a:visited,
+.view-node-search-result
+.list-item .field-type-taxonomy-term-reference a a:visited,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:visited,
+.subjects .subject a:visited,
+.news-list .news-label a:visited,
+.super-heading .field-name-field-ding-news-library .field-item a:visited {
+  background-color: $label-bg-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $label-text-color;
+  border-radius: 4px;
+}
+
+.field-slideshow-caption span {
+  color: $list-text-color;
+}
+
+.pane-instagram-block-instagram-block {
+  .ding-social-insta-item {
+    max-width: 250px;
+    min-height: 377px;
+    margin-right: 5px;
+
+    .ding-social-insta-item-image {
+      img {
+        width: 100%;
+      }
+    }
+
+
+    .ding-social-insta-item-caption {
+      font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+      color: #76787a;
+      font-size: 14px;
+      line-height: 1.5;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    .profile {
+      padding-left: 7px;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 0;
+
+      span.ext {
+        display: none;
+      }
+
+      .profile-photo {
+        display: none;
+      }
+    }
+  }
+
+  .ding-social-insta-slick-controls {
+    li {
+      color: transparent;
+    }
+
+    .insta-prev.slick-arrow,
+    .insta-next.slick-arrow {
+      display: inline-block;
+      margin-top: 10px;
+      width: 50px;
+      height: 30px;
+      border: 1px solid #f8f9f9;
+
+      &:before {
+        font-family: FontAwesome;
+        color: $label-text-color;
+        vertical-align: sub;
+      }
+    }
+
+    .insta-prev.slick-arrow:before {
+      content: '\f177';
+    }
+
+    .insta-next.slick-arrow:before {
+      content: '\f178';
+      padding-left: 20px;
+    }
   }
 }

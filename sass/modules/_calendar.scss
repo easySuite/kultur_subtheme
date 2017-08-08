@@ -1,0 +1,312 @@
+// Calendar style
+//==========================================================================
+
+#kultur-calendar {
+  #kultur-libraries {
+    .form-type-checkbox {
+      position: relative;
+      outline: none;
+      vertical-align: baseline;
+      backface-visibility: hidden;
+
+      input {
+        cursor: pointer;
+        position: absolute;
+        top: 02px;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
+        outline: none;
+        width: 20px;
+        height: 20px;
+      }
+
+      label {
+        display: block;
+        padding-left: 23px;
+        vertical-align: middle;
+        position: relative;
+        font-size: 14px;
+
+        &:before {
+          position: absolute;
+          font-size: 20px;
+          top: 2px;
+          left: 0;
+          width: 17px;
+          height: 17px;
+          line-height: 17px;
+          content: '\f096';
+          font: normal normal normal 20px/1 FontAwesome;
+        }
+      }
+    }
+
+    & input:checked ~ label:before {
+      font: normal normal normal 20px/1 FontAwesome;
+      content: '\f046';
+    }
+  }
+
+  .fc-toolbar {
+    margin-bottom: 0;
+  }
+
+  .fc-center h2,
+  #kultur-libraries label {
+    color: $label-text-color;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .fc-center h2 {
+    font-size: 30px;
+    margin: 0 35px;
+  }
+
+  table {
+    max-width: 1180px;
+    margin: 0 auto;
+    border-color: transparent;
+
+    table {
+      border-color: transparent;
+      thead {
+        border-color: transparent;
+        tr th {
+          border-color: transparent;
+          background-color: transparent;
+          text-transform: uppercase;
+          text-align: end;
+          color: #ababab;
+        }
+      }
+    }
+
+    thead td {
+      border-left: transparent;
+      border-right: transparent;
+      position: relative;
+
+      & > span {
+        position: absolute;
+        right: 0;
+      }
+    }
+
+    tbody td {
+      &.fc-event-container {
+        padding-right: 35px;
+        position: relative;
+        top: 5px;
+
+        .fc-content {
+          text-overflow: ellipsis;
+          color: #e7e6e6;
+        }
+      }
+
+      .fc-disabled-day {
+        background-color: #474747;
+      }
+    }
+
+    .fc-day-number {
+      width: 23px;
+      border-radius: 6px;
+      margin-right: 5px;
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    .fc-sat.fc-past,
+    .fc-sun.fc-past {
+      background-color: #bdbdbd;
+    }
+
+    .fc-sat.fc-future,
+    .fc-sun.fc-future {
+      background-color: #919191;
+    }
+
+    .fc-past {
+      background-color: #cccccc;
+      border-right: 1px solid #e0e0e0;
+
+      .fc-day-number {
+        background-color: #8a8a8a;
+        color: #bababa;
+      }
+    }
+
+    .fc-future {
+      background-color: #ababab;
+      border-right: 1px solid #e0e0e0;
+
+      .fc-day-number {
+        background-color: #474747;
+        color: $white;
+      }
+    }
+
+    .fc-today.fc-state-highlight {
+      background-color: $label-bg-color;
+
+      .fc-day-number {
+        background-color: $white;
+        color: $label-text-color;
+        font-weight: bold;
+      }
+    }
+
+    .kultur-past-event{
+      span {
+        color: #d9d8d8;;
+      }
+      &.other-info span{
+        color: #93bbbf;
+        font-weight: bold;
+      }
+    }
+
+    .kultur-future-event {
+      span {
+        color: #e7e6e6;
+      }
+      &.other-info span{
+        color: #196d5b;
+        font-weight: bold;
+      }
+    }
+
+    .kultur-today-event  {
+      span {
+        color: #474747; 
+      }
+      &.other-info span{
+        font-weight: bold;
+      }
+    }
+
+    .fc-event-container a {
+      background-color: transparent;
+      border-color: transparent;
+
+    }
+  }
+
+  .fc-prev-button,
+  .fc-next-button {
+    border-radius: 17px;
+    width: 35px;
+    height: 35px;
+    background: $button-default-background;
+
+    span {
+      height: 30px;
+      top: 5px;
+      color: $white;
+      line-height: initial;
+      margin: 0;
+
+      &.fc-icon-left-single-arrow:after {
+        color: $white;
+        content: '\f104';
+        padding-right: 5px;
+        font-family: FontAwesome;
+        font-size: 24px;
+        height: 30px;
+      }
+
+      &.fc-icon-right-single-arrow {
+        padding-left: 5px;
+        &:after {
+          color: $white;
+          content: '\f105';
+          padding-right: 5px;
+          font-family: FontAwesome;
+          font-size: 24px;
+          height: 30px;
+        }
+      }
+    }
+  }
+}
+
+.fc table { 
+  border-collapse: initial;
+}
+
+.fc-unthemed th,
+.fc-unthemed td,
+.fc-unthemed thead,
+.fc-unthemed tbody,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-row, 
+.fc-unthemed .fc-content, 
+.fc-unthemed .fc-popover, 
+.fc-unthemed .fc-list-view,
+.fc-unthemed .fc-list-heading td {
+  border-color: #e0e0e0;
+}
+
+#kultur_calendar-day {
+  background: #474747;
+
+  .kultur_calendar-title {
+    padding-left: 25px;
+    position: relative;
+    color: $white;
+    padding-top: 7px;
+    font-size: 20px;
+    
+    .day-number {
+      position: absolute;
+      right: 7px;
+      top: 7px;
+      background: $button-default-background;
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+      text-align: center;
+      color: $label-text-color;
+      font-weight: bold;
+    }
+  }
+
+  .kultur_calendar-body {
+    position: relative;
+    
+    .row  {
+      color: $white;
+      font-weight: bold;
+      padding-top: 20px;
+
+      .amount {
+        position: absolute;
+        padding-left: 10px;
+        font-weight: bold;
+      }
+
+      .title {
+        padding-left: 30px;
+      }
+
+      .event a {
+       color: $button-default-background;
+       font-weight: bold;
+       padding-left: 30px;
+      }
+
+      .time {
+        position: absolute;
+        right: 30px;
+        margin-top: -24px;
+      }
+    }
+  }
+}
+
+.fc-basic-view {
+  padding-bottom: 30px;
+}
