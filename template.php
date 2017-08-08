@@ -19,13 +19,6 @@ function kultur_subtheme_preprocess_html(&$vars) {
     ), 'setting'
   );
 
-  // Add Webtrends.
- /* drupal_add_js(drupal_get_path('theme', 'kultur_subtheme') . '/js/webtrends.load.js',
-    array(
-      'scope' => 'footer',
-    )
-  );*/
-
   // Add header link tag for apple-touch-icon.
   $apple_touch_icon = array(
     '#tag' => 'link',
@@ -39,8 +32,4 @@ function kultur_subtheme_preprocess_html(&$vars) {
   );
 
   drupal_add_html_head($apple_touch_icon, 'apple_touch_icon');
-}
-
-function kultur_subtheme_menu_tree__sub_menu(&$vars) {
-  var_dump($vars);
 }

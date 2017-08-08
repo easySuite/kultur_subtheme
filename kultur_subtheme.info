@@ -3,11 +3,5 @@ description = KulturØen subtheme
 core = 7.x
 base theme = ddbasic
 
-;-------------------- C S S -----------------------
-
+;-------------------- CSS -----------------------
 stylesheets[all][] = css/styles.css
-
-;-------------------- J S -----------------------
-
-scripts[] = js/kultur.js
-
