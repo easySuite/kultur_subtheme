@@ -321,6 +321,8 @@ textarea:focus {
   font-weight: bold;
 }
 
+/* Calendar styles
+   ========================================================================== */
 #kultur-calendar #kultur-libraries .form-type-checkbox {
   position: relative;
   outline: none;
@@ -583,6 +585,39 @@ textarea:focus {
   padding-bottom: 30px;
 }
 
+@media only screen and (max-width: 768px) {
+  #kultur-calendar .fc-center h2 {
+    font-size: 24px;
+    margin-left: 10px;
+    margin-right: 0;
+    font-size: 20px;
+  }
+
+  #kultur-libraries {
+    width: auto;
+    margin: 0 auto;
+  }
+
+  #kultur_calendar-day .kultur_calendar-title {
+    padding-left: 5px;
+    font-size: 16px;
+  }
+  #kultur_calendar-day .kultur_calendar-title .day-number {
+    width: 20px;
+    height: 20px;
+  }
+  #kultur_calendar-day .kultur_calendar-body .row {
+    padding-top: 0;
+  }
+  #kultur_calendar-day .kultur_calendar-body .row .amount {
+    font-size: 14px;
+  }
+  #kultur_calendar-day .kultur_calendar-body .row .title,
+  #kultur_calendar-day .kultur_calendar-body .row .event.a,
+  #kultur_calendar-day .kultur_calendar-body .row .time {
+    font-size: 14px;
+  }
+}
 /* Event page styles
    ========================================================================== */
 .view-kultur-events .event-list-leaf,
@@ -739,9 +774,8 @@ textarea:focus {
   border-radius: 4px;
 }
 
-/*
-* Contrybuted by MS
-*/
+/* Custom Styles contrybuted by ms
+   ========================================================================== */
 #page {
   height: 100%;
   background-image: url("../background.png");
@@ -773,6 +807,20 @@ body {
   height: 100%;
 }
 
+.topbar-menu {
+  top: 15px;
+  right: -10px;
+  position: absolute;
+  z-index: 2;
+}
+
+.search.pane-search-form,
+.user.pane-user-login {
+  position: absolute;
+  top: -102px;
+  z-index: 0;
+}
+
 a:link {
   color: #221e1f;
 }
@@ -788,14 +836,6 @@ a:hover, a:focus {
   height: 0;
 }
 .header-wrapper .header-inner .search {
-  display: none;
-}
-
-section .search #edit-submit {
-  border-radius: 0;
-  background: #a6d6cc;
-}
-section .search .form-item-search-block-form {
   display: none;
 }
 
@@ -887,7 +927,6 @@ section .search .form-item-search-block-form {
 }
 
 .pane-instagram-block-instagram-block .ding-social-insta-item {
-  max-width: 250px;
   min-height: 377px;
   margin-right: 5px;
 }
@@ -939,4 +978,16 @@ section .search .form-item-search-block-form {
 .pane-instagram-block-instagram-block .ding-social-insta-slick-controls .insta-next.slick-arrow:before {
   content: '\f178';
   padding-left: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .pane-instagram-block-instagram-block .ding-social-insta-item {
+    min-height: 375px;
+  }
+  .pane-instagram-block-instagram-block .ding-social-insta-item-caption {
+    display: block;
+  }
+  .pane-instagram-block-instagram-block .ding-social-insta-item-image img {
+    width: 100%;
+  }
 }

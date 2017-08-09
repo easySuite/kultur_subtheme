@@ -1,6 +1,5 @@
-/*
-* Contrybuted by MS
-*/
+/* Custom Styles contrybuted by ms
+   ========================================================================== */
 
 #page {
   height: 100%;
@@ -31,11 +30,20 @@
 
 body {
   height: 100%;
-  //color: $body-background-color;
 }
 
 .topbar-menu {
- // display: none;
+  top: 15px;
+  right: -10px;
+  position: absolute;
+  z-index: 2;
+}
+
+.search.pane-search-form,
+.user.pane-user-login {
+  position: absolute;
+  top: -102px;
+  z-index: 0;
 }
 
 // Links color
@@ -66,16 +74,6 @@ a {
   }
 }
 
-section .search {
-  #edit-submit {
-    border-radius: 0;
-    background: $button-default-background;
-  }
-
-  .form-item-search-block-form {
-    display: none;
-  }
-}
 .bottom {
   background: transparent;
   padding-top: 0;
@@ -175,7 +173,6 @@ section .search {
 
 .pane-instagram-block-instagram-block {
   .ding-social-insta-item {
-    max-width: 250px;
     min-height: 377px;
     margin-right: 5px;
 
@@ -184,7 +181,6 @@ section .search {
         width: 100%;
       }
     }
-
 
     .ding-social-insta-item-caption {
       font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
@@ -240,6 +236,24 @@ section .search {
     .insta-next.slick-arrow:before {
       content: '\f178';
       padding-left: 20px;
+    }
+  }
+}
+
+@include small-medium() {
+  .pane-instagram-block-instagram-block {
+    .ding-social-insta-item {
+      min-height: 375px;
+    }
+
+    .ding-social-insta-item-caption {
+      display: block;
+    }
+
+   .ding-social-insta-item-image {
+      img {
+        width: 100%;
+      }
     }
   }
 }
