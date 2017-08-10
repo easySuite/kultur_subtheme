@@ -1,0 +1,7 @@
+name = Midelfart KulturØen
+description = KulturØen subtheme
+core = 7.x
+base theme = ddbasic
+
+;-------------------- CSS -----------------------
+stylesheets[all][] = css/styles.css

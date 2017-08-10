@@ -1,0 +1,146 @@
+/* Event page styles
+   ========================================================================== */
+
+.view-kultur-events,
+.view-ding-event {
+  .event-list-leaf {
+    margin-bottom: 10px;
+    background-color: $list-text-color;
+
+    .event-list-date-wrapper {
+      min-width: 50px;
+
+      .event-list-day {
+        background-color: $label-bg-color;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $label-text-color;
+      }
+
+      .event-list-date {
+        text-transform: uppercase;
+        font-weight: bold;
+        color: $label-text-color;
+        font-size: 26px;
+
+      }
+
+      .event-list-month {
+        color: $label-text-color;
+      }
+    }
+
+    span {
+      color: #e8e7e7;
+    }
+  }
+}
+
+.event {
+  h1.page-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: $list-text-color;
+    text-transform: uppercase;
+    margin-bottom:0;
+    margin-top: 10px;
+  }
+
+  .event-lead .field-item{
+    color: $list-text-color;
+    font-size: 22px;
+    font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+  }
+
+  .event-content {
+    .field-item {
+      color: $list-text-color;
+    }
+  }
+}
+
+.icon-chevron-right {
+  &:before {
+    content: none;
+  }
+}
+
+.ting-object {
+  .subjects a {
+    height: 20px;
+    padding: 0px 10px;
+    margin-bottom: 0;
+  }
+}
+
+/* list-events
+   ========================================================================== */
+
+.views-exposed-form label {
+  color: $list-text-color;
+  font-size: 16px;
+}
+
+.views-exposed-form .form-item {
+  padding: 5px 0;
+  font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+}
+
+.views-exposed-widget label:first-child {
+  font-family: "SourceSansProSemibold";
+  font-weight: normal;
+  display: block;
+  font-size: 110%;
+  margin-right: -10px;
+  padding-right: 10px;
+  color: #7c7c7c;
+  border-bottom: 1px solid;
+}
+
+#edit-og-group-ref-target-id-entityreference-filter-wrapper,
+#edit-field-ding-event-category-tid-wrapper {
+  .form-type-bef-checkbox {
+    position: relative;
+    outline: none;
+    vertical-align: baseline;
+    backface-visibility: hidden;
+
+    input {
+      cursor: pointer;
+      position: absolute;
+      top: 02px;
+      left: 0;
+      opacity: 0;
+      z-index: -1;
+      outline: none;
+      width: 20px;
+      height: 20px;
+    }
+
+    label {
+      display: block;
+      padding-left: 23px;
+      vertical-align: middle;
+      position: relative;
+      font-size: 16px;
+      font-family: SourceSansProSemibold;
+
+      &:before {
+        position: absolute;
+        font-size: 20px;
+        top: 2px;
+        left: 0;
+        width: 17px;
+        height: 17px;
+        line-height: 17px;
+        content: '\f096';
+        font: normal normal normal 20px/1 FontAwesome;
+      }
+    }
+  }
+
+  & input:checked ~ label:before {
+    font: normal normal normal 20px/1 FontAwesome;
+    content: '\f046';
+  }
+}
