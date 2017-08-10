@@ -29,6 +29,8 @@
 
   <div class="content-wrapper">
     <div class="content-inner">
+      <div class="transform-content1"></div>
+      <div class="transform-content2"></div>
       <?php print render($content['content']); ?>
     </div>
   </div>

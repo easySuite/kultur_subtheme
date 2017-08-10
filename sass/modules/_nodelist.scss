@@ -1,8 +1,12 @@
 /* Ding nodelist styles
    ========================================================================== */
 
-.ding_nodelist-carousel {
-  padding-top: 20px;
+.page-ding-frontpage .ding_nodelist-carousel {
+  .ding_nodelist-items {
+    .event-image img {
+      height: 500px;
+    }
+  }
 }
 
 .ding_nodelist {

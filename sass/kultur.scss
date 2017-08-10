@@ -1,4 +1,4 @@
-/* Custom Styles contrybuted by ms
+/* Custom styles contributed by ms
    ========================================================================== */
 
 #page {
@@ -7,43 +7,16 @@
   background-repeat: repeat-x;
 }
 
-.logo {
-  margin-bottom: 25px;
-}
-
-.site-name {
-  top: 11px;
-  position: absolute;
-  left: 137px;
-  font-size: 19px;
-  font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+.panel-pane.pane-page-content {
+  position: relative;
 }
 
 .frontpage-layout {
   background: $white;
 }
 
-.topbar,
-.navigation-wrapper {
-  background: transparent;
-}
-
 body {
   height: 100%;
-}
-
-.topbar-menu {
-  top: 15px;
-  right: -10px;
-  position: absolute;
-  z-index: 2;
-}
-
-.search.pane-search-form,
-.user.pane-user-login {
-  position: absolute;
-  top: -102px;
-  z-index: 0;
 }
 
 // Links color
@@ -60,17 +33,6 @@ a {
   &:hover,
   &:focus {
     color: $link-color-hover;
-  }
-}
-
-.header-wrapper {
-  background: $white;
-  height: 0;
-
-  .header-inner {
-    .search {
-      display: none;
-    }
   }
 }
 
@@ -123,13 +85,27 @@ a {
   margin-top: 0px;
 }
 
-.layout-wrapper {
-  /*
-  transform: matrix3d( 1.0076628352490422, 0, 0, 0, 0.023255813953488372, 1.0076628352490422, 0, 0.00004455136772698922, 0, 0, 1, 0, 18, 42, 0, 1 );
+.transform-content1 {
+  background: #ffffff;
+  width: 1155px;
+  height: 432px;
+  position: absolute;
+  top: 175px;
+  transform: matrix3d( 1.038913710365194, -0.0038314176245210726, 0, 0.000045187815837374775,
+  0.028903654485049834, 1.0331118493909193, 0, 0.000055370985603543746, 0, 0, 1, 0, 32, 2, 0, 1 );
+  z-index: 0;
+}
 
-  matrix3d(1.01149, 0, 0, 0, 0.01746, 1.01149, 0, 0.00004, 0, 0, 1, 0, 10, 0, 0, 1)
-  matrix3d( 1.0076628352490422, 0, 0, 0, 0.023255813953488372, 1.0076628352490422, 0, 0.00004455136772698922, 0, 0, 1, 0, 18, 42, 0, 1 ) */
-
+.transform-content2 {
+  background: #ffffff;
+  width: 1178px;
+  height: 428px;
+  position: absolute;
+  top: 171px;
+  transform: matrix3d( 1.0154825121552282, 0.0019269117877708318, 0, 0.000011202975510295535,
+  0, 1.009634558938854, 0, 0.000056014877551477675, 0, 0, 1, 0, 3, 0, 0, 1 );
+  z-index: 0;
+  margin-left: 21px;
 }
 
 .label a {
@@ -167,93 +143,9 @@ a {
   border-radius: 4px;
 }
 
-.field-slideshow-caption span {
-  color: $list-text-color;
-}
-
-.pane-instagram-block-instagram-block {
-  .ding-social-insta-item {
-    min-height: 377px;
-    margin-right: 5px;
-
-    .ding-social-insta-item-image {
-      img {
-        width: 100%;
-      }
-    }
-
-    .ding-social-insta-item-caption {
-      font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
-      color: #76787a;
-      font-size: 14px;
-      line-height: 1.5;
-      overflow: hidden;
-      display: -webkit-box;
-      -webkit-line-clamp: 3;
-      -webkit-box-orient: vertical;
-    }
-
-    .profile {
-      padding-left: 7px;
-      width: 100%;
-      margin-top: 15px;
-      margin-bottom: 0;
-
-      span.ext {
-        display: none;
-      }
-
-      .profile-photo {
-        display: none;
-      }
-    }
-  }
-
-  .ding-social-insta-slick-controls {
-    li {
-      color: transparent;
-    }
-
-    .insta-prev.slick-arrow,
-    .insta-next.slick-arrow {
-      display: inline-block;
-      margin-top: 10px;
-      width: 50px;
-      height: 30px;
-      border: 1px solid #f8f9f9;
-
-      &:before {
-        font-family: FontAwesome;
-        color: $label-text-color;
-        vertical-align: sub;
-      }
-    }
-
-    .insta-prev.slick-arrow:before {
-      content: '\f177';
-    }
-
-    .insta-next.slick-arrow:before {
-      content: '\f178';
-      padding-left: 20px;
-    }
-  }
-}
-
-@include small-medium() {
-  .pane-instagram-block-instagram-block {
-    .ding-social-insta-item {
-      min-height: 375px;
-    }
-
-    .ding-social-insta-item-caption {
-      display: block;
-    }
-
-   .ding-social-insta-item-image {
-      img {
-        width: 100%;
-      }
-    }
+@include medium-large() {
+  .transform-content1,
+  .transform-content2 {
+    display: none;
   }
 }
