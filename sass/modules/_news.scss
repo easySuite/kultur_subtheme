@@ -1,0 +1,31 @@
+/* News page styles
+   ========================================================================== */
+.news {
+  h1.page-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: $list-text-color;
+    text-transform: uppercase;
+    margin-bottom:0;
+  }
+
+  .field-name-field-ding-news-lead .field-item{
+    color: $list-text-color;
+    font-size: 22px;
+    font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+  }
+
+  .news-content {
+    p {
+      color: $list-text-color;
+    }
+  }
+}
+
+.news-label a.active {
+  background-color: $label-bg-color;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: $label-text-color;
+  border-radius: 4px;
+}
