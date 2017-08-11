@@ -696,6 +696,10 @@ textarea:focus {
 
 /* list-events
    ========================================================================== */
+.page-arrangementer-liste .pane-page-content {
+  min-height: 500px;
+}
+
 .views-exposed-form label {
   color: #474747;
   font-size: 16px;
@@ -718,14 +722,18 @@ textarea:focus {
 }
 
 #edit-og-group-ref-target-id-entityreference-filter-wrapper .form-type-bef-checkbox,
-#edit-field-ding-event-category-tid-wrapper .form-type-bef-checkbox {
+#edit-og-group-ref-target-id-entityreference-filter-wrapper .form-type-checkbox,
+#edit-field-ding-event-category-tid-wrapper .form-type-bef-checkbox,
+#edit-field-ding-event-category-tid-wrapper .form-type-checkbox {
   position: relative;
   outline: none;
   vertical-align: baseline;
   backface-visibility: hidden;
 }
 #edit-og-group-ref-target-id-entityreference-filter-wrapper .form-type-bef-checkbox input,
-#edit-field-ding-event-category-tid-wrapper .form-type-bef-checkbox input {
+#edit-og-group-ref-target-id-entityreference-filter-wrapper .form-type-checkbox input,
+#edit-field-ding-event-category-tid-wrapper .form-type-bef-checkbox input,
+#edit-field-ding-event-category-tid-wrapper .form-type-checkbox input {
   cursor: pointer;
   position: absolute;
   top: 02px;
@@ -737,7 +745,9 @@ textarea:focus {
   height: 20px;
 }
 #edit-og-group-ref-target-id-entityreference-filter-wrapper .form-type-bef-checkbox label,
-#edit-field-ding-event-category-tid-wrapper .form-type-bef-checkbox label {
+#edit-og-group-ref-target-id-entityreference-filter-wrapper .form-type-checkbox label,
+#edit-field-ding-event-category-tid-wrapper .form-type-bef-checkbox label,
+#edit-field-ding-event-category-tid-wrapper .form-type-checkbox label {
   display: block;
   padding-left: 23px;
   vertical-align: middle;
@@ -746,7 +756,9 @@ textarea:focus {
   font-family: SourceSansProSemibold;
 }
 #edit-og-group-ref-target-id-entityreference-filter-wrapper .form-type-bef-checkbox label:before,
-#edit-field-ding-event-category-tid-wrapper .form-type-bef-checkbox label:before {
+#edit-og-group-ref-target-id-entityreference-filter-wrapper .form-type-checkbox label:before,
+#edit-field-ding-event-category-tid-wrapper .form-type-bef-checkbox label:before,
+#edit-field-ding-event-category-tid-wrapper .form-type-checkbox label:before {
   position: absolute;
   font-size: 20px;
   top: 2px;

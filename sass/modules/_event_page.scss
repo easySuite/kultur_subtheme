@@ -76,6 +76,12 @@
 /* list-events
    ========================================================================== */
 
+.page-arrangementer-liste {
+  .pane-page-content {
+    min-height: 500px;
+  }
+}
+
 .views-exposed-form label {
   color: $list-text-color;
   font-size: 16px;
@@ -99,7 +105,8 @@
 
 #edit-og-group-ref-target-id-entityreference-filter-wrapper,
 #edit-field-ding-event-category-tid-wrapper {
-  .form-type-bef-checkbox {
+  .form-type-bef-checkbox,
+  .form-type-checkbox {
     position: relative;
     outline: none;
     vertical-align: baseline;
