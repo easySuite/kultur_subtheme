@@ -274,11 +274,13 @@ textarea:focus {
   color: #221e1f;
   font-weight: bold;
   font-size: 16px;
+  font-family: "SourceSansProSemibold";
 }
 .ding_nodelist .ding_nodelist-items .date,
 .ding_nodelist .ding_nodelist-items .author,
 .ding_nodelist .ding_nodelist-items .item-body {
   color: #221e1f;
+  font-family: "SourceSansProRegular";
 }
 
 /* Event calendar styles
@@ -385,6 +387,7 @@ textarea:focus {
   color: #221e1f;
   text-transform: uppercase;
   font-weight: bold;
+  font-family: "SourceSansProSemibold";
 }
 #kultur-calendar .fc-center h2 {
   font-size: 30px;
@@ -429,6 +432,9 @@ textarea:focus {
 #kultur-calendar table tbody td .fc-disabled-day {
   background-color: #474747;
 }
+#kultur-calendar table tbody td .fc-title {
+  font-family: "SourceSansProRegular";
+}
 #kultur-calendar table .fc-day-number {
   width: 23px;
   border-radius: 6px;
@@ -451,6 +457,7 @@ textarea:focus {
 #kultur-calendar table .fc-past .fc-day-number {
   background-color: #8a8a8a;
   color: #bababa;
+  font-weight: bold;
 }
 #kultur-calendar table .fc-future {
   background-color: #ababab;
@@ -459,6 +466,7 @@ textarea:focus {
 #kultur-calendar table .fc-future .fc-day-number {
   background-color: #474747;
   color: #ffffff;
+  font-weight: bold;
 }
 #kultur-calendar table .fc-today.fc-state-highlight {
   background-color: #a6d6cc;
@@ -471,6 +479,11 @@ textarea:focus {
 #kultur-calendar table .kultur-past-event span {
   color: #d9d8d8;
 }
+#kultur-calendar table .kultur-past-event span.event-amount {
+  font-weight: bold;
+  padding-right: 5px;
+  color: #e1e1e1;
+}
 #kultur-calendar table .kultur-past-event.other-info span {
   color: #93bbbf;
   font-weight: bold;
@@ -478,12 +491,22 @@ textarea:focus {
 #kultur-calendar table .kultur-future-event span {
   color: #e7e6e6;
 }
+#kultur-calendar table .kultur-future-event span.event-amount {
+  font-weight: bold;
+  padding-right: 5px;
+  color: #fafafa;
+}
 #kultur-calendar table .kultur-future-event.other-info span {
   color: #196d5b;
   font-weight: bold;
 }
 #kultur-calendar table .kultur-today-event span {
   color: #474747;
+}
+#kultur-calendar table .kultur-today-event span.event-amount {
+  font-weight: bold;
+  padding-right: 5px;
+  width: 20px;
 }
 #kultur-calendar table .kultur-today-event.other-info span {
   font-weight: bold;
@@ -587,6 +610,7 @@ textarea:focus {
 }
 #kultur_calendar-day .kultur_calendar-body .row .event a {
   color: #a6d6cc;
+  font-family: "SourceSansProRegular";
   font-weight: bold;
   padding-left: 30px;
 }
@@ -939,18 +963,24 @@ textarea:focus {
   height: 30px;
   border: 1px solid #f8f9f9;
 }
-.pane-instagram-block-instagram-block .ding-social-insta-slick-controls .insta-prev.slick-arrow:before,
-.pane-instagram-block-instagram-block .ding-social-insta-slick-controls .insta-next.slick-arrow:before {
+.pane-instagram-block-instagram-block .ding-social-insta-slick-controls .insta-prev.slick-arrow[aria-disabled="false"]:before,
+.pane-instagram-block-instagram-block .ding-social-insta-slick-controls .insta-next.slick-arrow[aria-disabled="false"]:before {
   font-family: FontAwesome;
   color: #221e1f;
   vertical-align: sub;
 }
 .pane-instagram-block-instagram-block .ding-social-insta-slick-controls .insta-prev.slick-arrow:before {
   content: '\f177';
+  vertical-align: sub;
+  font-family: FontAwesome;
+  color: #d8d8d8;
 }
 .pane-instagram-block-instagram-block .ding-social-insta-slick-controls .insta-next.slick-arrow:before {
   content: '\f178';
   padding-left: 20px;
+  vertical-align: sub;
+  font-family: FontAwesome;
+  color: #d8d8d8;
 }
 
 .field-slideshow-caption span {
@@ -970,13 +1000,33 @@ textarea:focus {
 }
 /* Custom styles contributed by ms
    ========================================================================== */
-#page {
-  height: 100%;
+.html #page.ding2-site-template {
   background-image: url("../background.png");
-  background-repeat: repeat-x;
+}
+.html #page.ding2-site-template .logo {
+  margin-bottom: 83px;
+}
+.html #page.ding2-site-template .logo img {
+  margin-top: 0;
+  position: absolute;
+  max-height: 160px;
+  max-width: 315px;
+  top: 0;
+  left: -49px;
+}
+.html #page.ding2-site-template .topbar {
+  height: 150px;
+}
+.html #page.ding2-site-template .topbar-inner {
+  max-width: 1230px;
+}
+.html #page.ding2-site-template .transform-content1,
+.html #page.ding2-site-template .transform-content2 {
+  margin-top: 45px;
 }
 
 .panel-pane.pane-page-content {
+  min-height: 500px;
   position: relative;
 }
 
