@@ -57,6 +57,7 @@
     color: $label-text-color;
     text-transform: uppercase;
     font-weight: bold;
+    font-family: "SourceSansProSemibold";
   }
 
   .fc-center h2 {
@@ -109,6 +110,10 @@
       .fc-disabled-day {
         background-color: #474747;
       }
+
+      .fc-title {
+        font-family: "SourceSansProRegular";
+      }
     }
 
     .fc-day-number {
@@ -136,6 +141,7 @@
       .fc-day-number {
         background-color: #8a8a8a;
         color: #bababa;
+        font-weight: bold;
       }
     }
 
@@ -146,6 +152,7 @@
       .fc-day-number {
         background-color: #474747;
         color: $white;
+        font-weight: bold;
       }
     }
 
@@ -161,7 +168,13 @@
 
     .kultur-past-event{
       span {
-        color: #d9d8d8;;
+        color: #d9d8d8;
+
+        &.event-amount {
+          font-weight: bold;
+          padding-right: 5px;
+          color: #e1e1e1;
+        }
       }
       &.other-info span{
         color: #93bbbf;
@@ -172,6 +185,12 @@
     .kultur-future-event {
       span {
         color: #e7e6e6;
+
+        &.event-amount {
+          font-weight: bold;
+          padding-right: 5px;
+          color: #fafafa;
+        }
       }
       &.other-info span{
         color: #196d5b;
@@ -182,6 +201,12 @@
     .kultur-today-event  {
       span {
         color: #474747; 
+
+        &.event-amount {
+          font-weight: bold;
+          padding-right: 5px;
+          width: 20px;
+        }
       }
       &.other-info span{
         font-weight: bold;
@@ -293,9 +318,10 @@
       }
 
       .event a {
-       color: $button-default-background;
-       font-weight: bold;
-       padding-left: 30px;
+        color: $button-default-background;
+        font-family: "SourceSansProRegular";
+        font-weight: bold;
+        padding-left: 30px;
       }
 
       .time {

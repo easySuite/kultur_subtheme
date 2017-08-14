@@ -75,12 +75,14 @@
       color: $label-text-color;
       font-weight: bold;
       font-size: 16px;
+      font-family: "SourceSansProSemibold";
     }
 
     .date,
     .author,
     .item-body {
       color: $label-text-color;
+      font-family: "SourceSansProRegular";
     }
   }
 }

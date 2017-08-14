@@ -52,7 +52,7 @@
       height: 30px;
       border: 1px solid #f8f9f9;
 
-      &:before {
+      &[aria-disabled="false"]:before {
         font-family: FontAwesome;
         color: $label-text-color;
         vertical-align: sub;
@@ -61,11 +61,17 @@
 
     .insta-prev.slick-arrow:before {
       content: '\f177';
+      vertical-align: sub;
+      font-family: FontAwesome;
+      color: $carousel-background;
     }
 
     .insta-next.slick-arrow:before {
       content: '\f178';
       padding-left: 20px;
+      vertical-align: sub;
+      font-family: FontAwesome;
+      color: $carousel-background;
     }
   }
 }

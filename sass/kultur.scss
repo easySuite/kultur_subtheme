@@ -1,13 +1,36 @@
 /* Custom styles contributed by ms
    ========================================================================== */
 
-#page {
-  height: 100%;
+.html #page.ding2-site-template {
   background-image: url("../background.png");
-  background-repeat: repeat-x;
+
+  .logo {
+    margin-bottom: 83px;
+    img {
+      margin-top: 0;
+      position: absolute;
+      max-height: 160px;
+      max-width: 315px;
+      top: 0;
+      left: -49px;
+    }
+  }
+  .topbar {
+    height: 150px;
+  }
+
+  .topbar-inner {
+    max-width: 1230px;
+  }
+
+  .transform-content1,
+  .transform-content2 {
+    margin-top: 45px;
+  }
 }
 
 .panel-pane.pane-page-content {
+  min-height: 500px;
   position: relative;
 }
 
