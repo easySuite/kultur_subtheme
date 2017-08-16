@@ -170,9 +170,26 @@ a {
   border-radius: 4px;
 }
 
+@include small-medium() {
+  .transform-content1,
+  .transform-content2 {
+    display: none;
+  }
+}
+
 @include medium-large() {
   .transform-content1,
   .transform-content2 {
     display: none;
+  }
+}
+
+@include small-medium() {
+  .html #page {
+    background-image: url("../background.png") !important;
+
+    .logo img {
+      height: 120px;
+    }
   }
 }
