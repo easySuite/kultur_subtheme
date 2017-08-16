@@ -12,15 +12,19 @@
       max-height: 160px;
       max-width: 315px;
       top: 0;
-      left: -49px;
+      left: 3px;
     }
   }
+
   .topbar {
     height: 150px;
   }
 
   .topbar-inner {
     max-width: 1230px;
+    height: inherit;
+    left: -30px;
+    padding-left: 80px;
   }
 
   .transform-content1,
