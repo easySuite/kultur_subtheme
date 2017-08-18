@@ -1024,6 +1024,7 @@ textarea:focus {
    ========================================================================== */
 .html #page.ding2-site-template {
   background-image: url("../background.jpg");
+  background-size: cover;
 }
 .html #page.ding2-site-template .logo {
   margin-bottom: 83px;
@@ -1184,6 +1185,7 @@ a:hover, a:focus {
 @media only screen and (max-width: 768px) {
   .html #page {
     background-image: url("../background.jpg") !important;
+    background-size: contain;
   }
   .html #page .logo img {
     height: 120px;
