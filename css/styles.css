@@ -619,6 +619,7 @@ textarea:focus {
   font-family: "SourceSansProRegular";
   font-weight: bold;
   padding-left: 30px;
+  display: inline-block;
 }
 #kultur_calendar-day .kultur_calendar-body .row .time {
   position: absolute;
