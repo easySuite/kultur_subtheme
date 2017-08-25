@@ -8,7 +8,8 @@
 @import "configuration/_variables";
 
 .html #page.ding2-site-template {
-  background-image: url("../background.png");
+  background-image: url("../background.jpg");
+  background-size: cover;
 
   .logo {
     margin-bottom: 83px;
@@ -18,15 +19,19 @@
       max-height: 160px;
       max-width: 315px;
       top: 0;
-      left: -49px;
+      left: 3px;
     }
   }
+
   .topbar {
     height: 150px;
   }
 
   .topbar-inner {
     max-width: 1230px;
+    height: inherit;
+    left: -30px;
+    padding-left: 80px;
   }
 
   .transform-content1,
@@ -172,9 +177,27 @@ a {
   border-radius: 4px;
 }
 
+@include small-medium() {
+  .transform-content1,
+  .transform-content2 {
+    display: none;
+  }
+}
+
 @include medium-large() {
   .transform-content1,
   .transform-content2 {
     display: none;
+  }
+}
+
+@include small-medium() {
+  .html #page {
+    background-image: url("../background.jpg") !important;
+    background-size: contain;
+
+    .logo img {
+      height: 120px;
+    }
   }
 }

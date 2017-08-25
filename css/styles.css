@@ -27,6 +27,12 @@
   color: #ffffff;
 }
 
+@media only screen and (max-width: 768px) {
+  .navigation-wrapper {
+    padding: 0;
+  }
+}
+
 .navigation-inner {
   max-width: 1229px;
 }
@@ -617,6 +623,7 @@ textarea:focus {
   font-family: "SourceSansProRegular";
   font-weight: bold;
   padding-left: 30px;
+  display: inline-block;
 }
 #kultur_calendar-day .kultur_calendar-body .row .time {
   position: absolute;
@@ -838,9 +845,14 @@ textarea:focus {
 .site-name {
   top: 11px;
   position: absolute;
-  left: 137px;
+  left: 187px;
   font-size: 19px;
-  font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+  font-family: "SourceSansProRegular";
+}
+@media only screen and (max-width: 768px) {
+  .site-name {
+    left: 150px;
+  }
 }
 
 .topbar,
@@ -849,8 +861,7 @@ textarea:focus {
 }
 
 .topbar-menu {
-  top: 15px;
-  right: -10px;
+  right: 0px;
   position: absolute;
   z-index: 2;
 }
@@ -864,6 +875,14 @@ textarea:focus {
   width: 300px;
   border-radius: 0;
   display: inline-block !important;
+}
+@media only screen and (max-width: 768px) {
+  .search.pane-search-form {
+    display: inherit;
+  }
+  .search.pane-search-form #edit-submit {
+    display: none;
+  }
 }
 .search.pane-search-form .form-item-search-block-form label {
   display: none;
@@ -891,18 +910,22 @@ textarea:focus {
   color: #a6d6cc;
 }
 
+@media only screen and (max-width: 480px) {
+  .transform-main-menu,
+  .transform-sub-menu,
+  .secondary-menu {
+    display: none;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 940px) {
-  .search.pane-search-form #search-block-form {
+  .search.pane-search-form #search-block-form,
+  .secondary-menu {
     display: none;
   }
 
   .transform-main-menu,
   .transform-sub-menu {
     display: none;
-  }
-
-  .secondary-menu-wrapper .secondary-menu {
-    position: relative;
   }
 }
 @media only screen and (max-width: 1210px) {
@@ -1005,7 +1028,8 @@ textarea:focus {
 /* Custom styles contributed by ms
    ========================================================================== */
 .html #page.ding2-site-template {
-  background-image: url("../background.png");
+  background-image: url("../background.jpg");
+  background-size: cover;
 }
 .html #page.ding2-site-template .logo {
   margin-bottom: 83px;
@@ -1016,13 +1040,16 @@ textarea:focus {
   max-height: 160px;
   max-width: 315px;
   top: 0;
-  left: -49px;
+  left: 3px;
 }
 .html #page.ding2-site-template .topbar {
   height: 150px;
 }
 .html #page.ding2-site-template .topbar-inner {
   max-width: 1230px;
+  height: inherit;
+  left: -30px;
+  padding-left: 80px;
 }
 .html #page.ding2-site-template .transform-content1,
 .html #page.ding2-site-template .transform-content2 {
@@ -1148,9 +1175,24 @@ a:hover, a:focus {
   border-radius: 4px;
 }
 
+@media only screen and (max-width: 768px) {
+  .transform-content1,
+  .transform-content2 {
+    display: none;
+  }
+}
 @media only screen and (min-width: 481px) and (max-width: 940px) {
   .transform-content1,
   .transform-content2 {
     display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .html #page {
+    background-image: url("../background.jpg") !important;
+    background-size: contain;
+  }
+  .html #page .logo img {
+    height: 120px;
   }
 }

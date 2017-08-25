@@ -18,6 +18,12 @@
 // Navigation, main menu and secondary menu
 //==========================================================================
 
+.navigation-wrapper {
+  @include small-medium(){
+    padding: 0;
+  }
+}
+
 .navigation-inner{
   max-width: 1229px;
 }
