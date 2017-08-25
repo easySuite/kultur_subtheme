@@ -1,5 +1,11 @@
 /* Custom styles contributed by ms
    ========================================================================== */
+// Include configuration
+
+//@import "configuration/_fontawesome";
+@import "configuration/_mixins";
+@import "configuration/_colors";
+@import "configuration/_variables";
 
 .html #page.ding2-site-template {
   background-image: url("../background.png");
