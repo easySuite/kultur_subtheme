@@ -1,3 +1,191 @@
-/* Welcome to Compass. Use this file to define print styles.
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* Custom styles contributed by ms
+   ========================================================================== */
+/**
+ * Colors that can be configured through theme settings.
+ *
+ * Every color settings MUST be in HEX format..
+ * @author magnify
+ */
+/* Body */
+/* Topbar */
+/* Header */
+/* Navigation */
+/* Tabroll */
+/* Links */
+/* Labels */
+/* Content */
+/* List */
+/* Footer */
+/* Buttons */
+/* Dialog box */
+/* Funny facts */
+/* Carousel */
+.html #page.ding2-site-template {
+  background-image: url("../background.jpg");
+  background-size: cover;
+}
+.html #page.ding2-site-template .logo {
+  margin-bottom: 83px;
+}
+.html #page.ding2-site-template .logo img {
+  margin-top: 0;
+  position: absolute;
+  max-height: 160px;
+  max-width: 315px;
+  top: 0;
+  left: 3px;
+}
+.html #page.ding2-site-template .topbar {
+  height: 150px;
+}
+.html #page.ding2-site-template .topbar-inner {
+  max-width: 1230px;
+  height: inherit;
+  left: -30px;
+  padding-left: 80px;
+}
+.html #page.ding2-site-template .transform-content1,
+.html #page.ding2-site-template .transform-content2 {
+  margin-top: 45px;
+}
+
+.panel-pane.pane-page-content {
+  min-height: 500px;
+  position: relative;
+}
+
+.frontpage-layout {
+  background: #ffffff;
+}
+
+body {
+  height: 100%;
+}
+
+a:link {
+  color: #221e1f;
+}
+a:visited {
+  color: #221e1f;
+}
+a:hover, a:focus {
+  color: #070606;
+}
+
+.bottom {
+  background: transparent;
+  padding-top: 0;
+  padding-bottom: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+.bottom .pane-content p {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #999999;
+}
+.bottom a {
+  color: #999999;
+}
+
+#page .footer {
+  padding-top: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+}
+#page .footer div.footer-inner > div.pane-block {
+  background: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.content-wrapper {
+  margin-top: 0;
+}
+
+.not-front .pane-page-content {
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.default-layout {
+  margin-top: 0px;
+}
+
+.transform-content1 {
+  background: #ffffff;
+  width: 1155px;
+  height: 432px;
+  position: absolute;
+  top: 175px;
+  transform: matrix3d(1.03891, -0.00383, 0, 0.00005, 0.0289, 1.03311, 0, 0.00006, 0, 0, 1, 0, 32, 2, 0, 1);
+  z-index: 0;
+}
+
+.transform-content2 {
+  background: #ffffff;
+  width: 1178px;
+  height: 428px;
+  position: absolute;
+  top: 171px;
+  transform: matrix3d(1.01548, 0.00193, 0, 0.00001, 0, 1.00963, 0, 0.00006, 0, 0, 1, 0, 3, 0, 0, 1);
+  z-index: 0;
+  margin-left: 21px;
+}
+
+.label a {
+  background-color: #a6d6cc;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #221e1f;
+  border-radius: 4px;
+}
+.label a:hover {
+  background-color: #8db7ae;
+}
+.label a:link {
+  color: #221e1f;
+}
+
+.label a:link,
+.view-node-search-result .list-item .field-type-taxonomy-term-reference a a:link,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:link,
+.subjects .subject a:link, .news-list .news-label a:link,
+.super-heading .field-name-field-ding-news-library .field-item a:link,
+.label a:visited,
+.view-node-search-result
+.list-item .field-type-taxonomy-term-reference a a:visited,
+.ting-reference-reverse-list .list-item .field-type-taxonomy-term-reference a a:visited,
+.subjects .subject a:visited,
+.news-list .news-label a:visited,
+.super-heading .field-name-field-ding-news-library .field-item a:visited {
+  background-color: #a6d6cc;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #221e1f;
+  border-radius: 4px;
+}
+
+@media only screen and (max-width: 768px) {
+  .transform-content1,
+  .transform-content2 {
+    display: none;
+  }
+}
+@media only screen and (min-width: 481px) and (max-width: 940px) {
+  .transform-content1,
+  .transform-content2 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .html #page {
+    background-image: url("../background.jpg") !important;
+    background-size: contain;
+  }
+  .html #page .logo img {
+    height: 120px;
+  }
+}

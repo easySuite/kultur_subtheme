@@ -614,6 +614,10 @@ textarea:focus {
 #kultur_calendar-day .kultur_calendar-body .row .title {
   padding-left: 30px;
 }
+#kultur_calendar-day .kultur_calendar-body .row .title .other {
+  padding: 0;
+}
+#kultur_calendar-day .kultur_calendar-body .row .title a,
 #kultur_calendar-day .kultur_calendar-body .row .event a {
   color: #a6d6cc;
   font-family: "SourceSansProRegular";

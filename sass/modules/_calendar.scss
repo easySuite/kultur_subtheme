@@ -315,14 +315,20 @@
 
       .title {
         padding-left: 30px;
+        .other {
+          padding: 0;
+        }
       }
 
-      .event a {
-        color: $button-default-background;
-        font-family: "SourceSansProRegular";
-        font-weight: bold;
-        padding-left: 30px;
-        display: inline-block;
+      .title,
+      .event {
+        a {
+          color: $button-default-background;
+          font-family: "SourceSansProRegular";
+          font-weight: bold;
+          padding-left: 30px;
+          display: inline-block;
+        }
       }
 
       .time {
