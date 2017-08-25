@@ -200,7 +200,7 @@
 
     .kultur-today-event  {
       span {
-        color: #474747; 
+        color: #474747;
 
         &.event-amount {
           font-weight: bold;
@@ -258,7 +258,7 @@
   }
 }
 
-.fc table { 
+.fc table {
   border-collapse: initial;
 }
 
@@ -267,9 +267,9 @@
 .fc-unthemed thead,
 .fc-unthemed tbody,
 .fc-unthemed .fc-divider,
-.fc-unthemed .fc-row, 
-.fc-unthemed .fc-content, 
-.fc-unthemed .fc-popover, 
+.fc-unthemed .fc-row,
+.fc-unthemed .fc-content,
+.fc-unthemed .fc-popover,
 .fc-unthemed .fc-list-view,
 .fc-unthemed .fc-list-heading td {
   border-color: #e0e0e0;
@@ -284,7 +284,7 @@
     color: $white;
     padding-top: 7px;
     font-size: 20px;
-    
+
     .day-number {
       position: absolute;
       right: 7px;
@@ -301,7 +301,7 @@
 
   .kultur_calendar-body {
     position: relative;
-    
+
     .row  {
       color: $white;
       font-weight: bold;
@@ -315,13 +315,18 @@
 
       .title {
         padding-left: 30px;
+        .other {
+          padding: 0;
+        }
       }
-
-      .event a {
-        color: $button-default-background;
-        font-family: "SourceSansProRegular";
-        font-weight: bold;
-        padding-left: 30px;
+      .title,
+      .event {
+        a {
+          color: $button-default-background;
+          font-family: "SourceSansProRegular";
+          font-weight: bold;
+          padding-left: 30px;
+        }
       }
 
       .time {
@@ -354,14 +359,14 @@
     .kultur_calendar-title {
       padding-left: 5px;
       font-size: 16px;
-      
+
       .day-number {
         width: 20px;
         height: 20px;
       }
     }
 
-   .kultur_calendar-body { 
+   .kultur_calendar-body {
       .row  {
         padding-top: 0;
 
