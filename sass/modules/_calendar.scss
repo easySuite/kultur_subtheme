@@ -332,9 +332,9 @@
       }
 
       .time {
-        position: absolute;
-        right: 30px;
-        margin-top: -24px;
+        display: inline-block;
+        float: right;
+        margin-right: 30px;
       }
     }
   }

@@ -21,8 +21,7 @@
 /* Funny facts */
 /* Carousel */
 .html #page.ding2-site-template {
-  background-image: url("../background.jpg");
-  background-size: cover;
+  background-image: url("../background.png");
 }
 .html #page.ding2-site-template .logo {
   margin-bottom: 83px;
@@ -33,16 +32,13 @@
   max-height: 160px;
   max-width: 315px;
   top: 0;
-  left: 3px;
+  left: -49px;
 }
 .html #page.ding2-site-template .topbar {
   height: 150px;
 }
 .html #page.ding2-site-template .topbar-inner {
   max-width: 1230px;
-  height: inherit;
-  left: -30px;
-  padding-left: 80px;
 }
 .html #page.ding2-site-template .transform-content1,
 .html #page.ding2-site-template .transform-content2 {
@@ -168,24 +164,9 @@ a:hover, a:focus {
   border-radius: 4px;
 }
 
-@media only screen and (max-width: 768px) {
-  .transform-content1,
-  .transform-content2 {
-    display: none;
-  }
-}
 @media only screen and (min-width: 481px) and (max-width: 940px) {
   .transform-content1,
   .transform-content2 {
     display: none;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .html #page {
-    background-image: url("../background.jpg") !important;
-    background-size: contain;
-  }
-  .html #page .logo img {
-    height: 120px;
   }
 }
