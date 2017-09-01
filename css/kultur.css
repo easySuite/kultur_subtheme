@@ -76,6 +76,9 @@ a:hover, a:focus {
   margin: 0 auto;
   background-color: #ffffff;
 }
+.bottom .pane-block-1 {
+  margin-top: 20px;
+}
 .bottom .pane-content p {
   margin-bottom: 0;
   margin-top: 0;

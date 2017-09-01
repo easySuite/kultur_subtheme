@@ -74,6 +74,10 @@
 
   input {
     border-radius: 0;
+    min-height: 63px;
+    &:focus {
+      border: 0;
+    }
   }
 
   input.auto-submit{
@@ -87,10 +91,10 @@
   .secondary-menu {
     display: none;
   }
-} 
+}
 
 @include medium-large() {
-  .search.pane-search-form #search-block-form, 
+  .search.pane-search-form #search-block-form,
   .secondary-menu {
     display: none;
   }
