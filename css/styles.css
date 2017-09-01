@@ -888,9 +888,8 @@ textarea:focus {
   display: none;
 }
 .search.pane-search-form #search-block-form {
-  position: absolute;
+  position: relative;
   right: -519px;
-  margin-top: -16px;
 }
 .search.pane-search-form .form-actions {
   top: -2px;
