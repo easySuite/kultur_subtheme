@@ -904,6 +904,10 @@ textarea:focus {
 }
 .search.pane-search-form input {
   border-radius: 0;
+  min-height: 63px;
+}
+.search.pane-search-form input:focus {
+  border: 0;
 }
 .search.pane-search-form input.auto-submit {
   background: #221e1f;
@@ -1082,6 +1086,9 @@ a:hover, a:focus {
   max-width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
+}
+.bottom .pane-block-1 {
+  margin-top: 20px;
 }
 .bottom .pane-content p {
   margin-bottom: 0;
