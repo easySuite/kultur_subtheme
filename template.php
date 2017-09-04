@@ -32,6 +32,18 @@ function kultur_subtheme_preprocess_html(&$vars) {
   );
 
   drupal_add_html_head($apple_touch_icon, 'apple_touch_icon');
+
+  // Altering dynamic background selector.
+  $current_domain = domain_get_domain();
+
+  if ($current_domain['machine_name'] == 'kulturoen_dk') {
+    $image_css_conf = variable_get('dynamic_background_css', array());
+    $selector = $image_css_conf['selector'];
+    if ($selector == '#page.ding2-site-template') {
+      $image_css_conf['selector'] = '.domain-kulturoen-dk ' . $selector;
+      variable_set('dynamic_background_css', $image_css_conf);
+    }
+  }
 }
 
 /**
