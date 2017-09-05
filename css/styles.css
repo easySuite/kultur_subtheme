@@ -49,16 +49,16 @@
 }
 .main-menu-wrapper .main-menu .menu-item {
   color: #454545;
-  font-weight: bold;
   text-transform: uppercase;
   font-size: 16px;
+  font-family: SourceSansProSemibold;
 }
 .main-menu-wrapper .main-menu .menu-item:hover, .main-menu-wrapper .main-menu .menu-item.active {
   color: #070606;
 }
 .main-menu-wrapper .transform-main-menu {
   background-color: #e8e7e7;
-  width: 1114px;
+  width: 1113px;
   margin-left: 94px;
   height: 75px;
   position: absolute;
@@ -82,7 +82,7 @@
 .secondary-menu-wrapper .secondary-menu li a.menu-item {
   text-transform: uppercase;
   color: #474747;
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
   font-size: 14px;
 }
 .secondary-menu-wrapper .transform-sub-menu {
@@ -236,7 +236,7 @@ textarea:focus {
 .ding_nodelist .pagination a.selected {
   background-color: #a6d6cc;
   color: #221e1f;
-  font-weight: bold;
+  font-family: "SourceSansProSemibold";
   text-transform: uppercase;
 }
 .ding_nodelist .pagination {
@@ -253,7 +253,7 @@ textarea:focus {
   color: #221e1f;
 }
 .ding_nodelist .event-date {
-  font-weight: bold;
+  font-family: "SourceSansProSemibold";
 }
 .ding_nodelist .field-name-field-ding-news-library .field-item a {
   color: #a6d6cc;
@@ -271,14 +271,12 @@ textarea:focus {
 .ding_nodelist .node .library a,
 .ding_nodelist .node .item-price {
   font-size: 18px;
-  font-weight: bold;
 }
 .ding_nodelist .node p {
   font-size: 18px;
 }
 .ding_nodelist .ding_nodelist-items h2.item-title a {
   color: #221e1f;
-  font-weight: bold;
   font-size: 16px;
   font-family: "SourceSansProSemibold";
 }
@@ -298,13 +296,12 @@ textarea:focus {
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar h2 {
   text-transform: lowercase;
   color: #221e1f;
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
 }
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar .calendar-row .calendar-day-head {
   background-color: #d5d5d5;
   color: #221e1f;
   text-transform: lowercase;
-  font-weight: bold;
 }
 .pane-ding-event-calendar-ding-event-calendar #eventsCalendar #calendar .calendar-row .calendar-day-np {
   background-color: #f2f2f2;
@@ -338,10 +335,10 @@ textarea:focus {
 .pane-ding-event-calendar-ding-event-calendar #eventList .event-items .event-title a {
   color: #a6d6cc;
   text-decoration: none;
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
 }
 .pane-ding-event-calendar-ding-event-calendar #eventList .more-link a {
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
 }
 
 /* Calendar styles
@@ -392,7 +389,6 @@ textarea:focus {
 #kultur-calendar #kultur-libraries label {
   color: #221e1f;
   text-transform: uppercase;
-  font-weight: bold;
   font-family: "SourceSansProSemibold";
 }
 #kultur-calendar .fc-center h2 {
@@ -463,7 +459,7 @@ textarea:focus {
 #kultur-calendar table .fc-past .fc-day-number {
   background-color: #8a8a8a;
   color: #bababa;
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
 }
 #kultur-calendar table .fc-future {
   background-color: #ababab;
@@ -472,7 +468,7 @@ textarea:focus {
 #kultur-calendar table .fc-future .fc-day-number {
   background-color: #474747;
   color: #ffffff;
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
 }
 #kultur-calendar table .fc-today.fc-state-highlight {
   background-color: #a6d6cc;
@@ -480,42 +476,42 @@ textarea:focus {
 #kultur-calendar table .fc-today.fc-state-highlight .fc-day-number {
   background-color: #ffffff;
   color: #221e1f;
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
 }
 #kultur-calendar table .kultur-past-event span {
   color: #d9d8d8;
 }
 #kultur-calendar table .kultur-past-event span.event-amount {
-  font-weight: bold;
   padding-right: 5px;
   color: #e1e1e1;
+  font-family: SourceSansProSemibold;
 }
 #kultur-calendar table .kultur-past-event.other-info span {
   color: #93bbbf;
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
 }
 #kultur-calendar table .kultur-future-event span {
   color: #e7e6e6;
 }
 #kultur-calendar table .kultur-future-event span.event-amount {
-  font-weight: bold;
   padding-right: 5px;
   color: #fafafa;
+  font-family: SourceSansProSemibold;
 }
 #kultur-calendar table .kultur-future-event.other-info span {
   color: #196d5b;
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
 }
 #kultur-calendar table .kultur-today-event span {
   color: #474747;
 }
 #kultur-calendar table .kultur-today-event span.event-amount {
-  font-weight: bold;
   padding-right: 5px;
   width: 20px;
+  font-family: SourceSansProSemibold;
 }
 #kultur-calendar table .kultur-today-event.other-info span {
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
 }
 #kultur-calendar table .fc-event-container a {
   background-color: transparent;
@@ -596,20 +592,20 @@ textarea:focus {
   border-radius: 5px;
   text-align: center;
   color: #221e1f;
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
 }
 #kultur_calendar-day .kultur_calendar-body {
   position: relative;
 }
 #kultur_calendar-day .kultur_calendar-body .row {
   color: #ffffff;
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
   padding-top: 20px;
 }
 #kultur_calendar-day .kultur_calendar-body .row .amount {
   position: absolute;
   padding-left: 10px;
-  font-weight: bold;
+  font-family: SourceSansProSemibold;
 }
 #kultur_calendar-day .kultur_calendar-body .row .title {
   padding-left: 30px;
@@ -621,7 +617,6 @@ textarea:focus {
 #kultur_calendar-day .kultur_calendar-body .row .event a {
   color: #a6d6cc;
   font-family: "SourceSansProRegular";
-  font-weight: bold;
   padding-left: 30px;
   display: inline-block;
 }
@@ -683,15 +678,15 @@ textarea:focus {
 .view-ding-event .event-list-leaf .event-list-date-wrapper .event-list-day {
   background-color: #a6d6cc;
   text-transform: uppercase;
-  font-weight: bold;
   color: #221e1f;
+  font-family: "SourceSansProSemibold";
 }
 .view-kultur-events .event-list-leaf .event-list-date-wrapper .event-list-date,
 .view-ding-event .event-list-leaf .event-list-date-wrapper .event-list-date {
   text-transform: uppercase;
-  font-weight: bold;
   color: #221e1f;
   font-size: 26px;
+  font-family: "SourceSansProSemibold";
 }
 .view-kultur-events .event-list-leaf .event-list-date-wrapper .event-list-month,
 .view-ding-event .event-list-leaf .event-list-date-wrapper .event-list-month {
@@ -702,18 +697,22 @@ textarea:focus {
   color: #e8e7e7;
 }
 
+#views-exposed-form-kultur-events-kultur-event-list .views-exposed-form label {
+  font-weight: normal;
+}
+
 .event h1.page-title {
   font-size: 32px;
-  font-weight: bold;
   color: #474747;
   text-transform: uppercase;
   margin-bottom: 0;
   margin-top: 10px;
+  font-family: "SourceSansProSemibold";
 }
 .event .event-lead .field-item {
   color: #474747;
   font-size: 22px;
-  font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+  font-family: "SourceSansProRegular";
 }
 .event .event-content .field-item {
   color: #474747;
@@ -742,12 +741,11 @@ textarea:focus {
 
 .views-exposed-form .form-item {
   padding: 5px 0;
-  font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+  font-family: "SourceSansProRegular";
 }
 
 .views-exposed-widget label:first-child {
   font-family: "SourceSansProSemibold";
-  font-weight: normal;
   display: block;
   font-size: 110%;
   margin-right: -10px;
@@ -814,15 +812,15 @@ textarea:focus {
    ========================================================================== */
 .news h1.page-title {
   font-size: 32px;
-  font-weight: bold;
   color: #474747;
   text-transform: uppercase;
   margin-bottom: 0;
+  font-family: "SourceSansProSemibold";
 }
 .news .field-name-field-ding-news-lead .field-item {
   color: #474747;
   font-size: 22px;
-  font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+  font-family: "SourceSansProRegular";
 }
 .news .news-content p {
   color: #474747;
@@ -831,9 +829,9 @@ textarea:focus {
 .news-label a.active {
   background-color: #a6d6cc;
   text-transform: uppercase;
-  font-weight: bold;
   color: #221e1f;
   border-radius: 4px;
+  font-family: "SourceSansProSemibold";
 }
 
 /* Header styles
@@ -899,7 +897,7 @@ textarea:focus {
   background: #a6d6cc;
   color: #ffffff;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "SourceSansProSemibold";
 }
 .search.pane-search-form input {
   border-radius: 0;
@@ -948,7 +946,7 @@ textarea:focus {
 
 #edit-searches label a.active {
   color: #a6d6cc;
-  font-weight: bold;
+  font-family: "SourceSansProSemibold";
 }
 
 /* Instagram styles
@@ -961,7 +959,7 @@ textarea:focus {
   width: 100%;
 }
 .pane-instagram-block-instagram-block .ding-social-insta-item .ding-social-insta-item-caption {
-  font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+  font-family: "SourceSansProRegular";
   color: #76787a;
   font-size: 14px;
   line-height: 1.5;
@@ -1032,6 +1030,8 @@ textarea:focus {
    ========================================================================== */
 .html #page.ding2-site-template {
   background-image: url("../background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 .html #page.ding2-site-template .logo {
   margin-bottom: 83px;
@@ -1042,13 +1042,16 @@ textarea:focus {
   max-height: 160px;
   max-width: 315px;
   top: 0;
-  left: -49px;
+  left: 3px;
 }
 .html #page.ding2-site-template .topbar {
   height: 150px;
 }
 .html #page.ding2-site-template .topbar-inner {
   max-width: 1230px;
+  height: inherit;
+  left: -30px;
+  padding-left: 80px;
 }
 .html #page.ding2-site-template .transform-content1,
 .html #page.ding2-site-template .transform-content2 {
@@ -1147,7 +1150,7 @@ a:hover, a:focus {
 .label a {
   background-color: #a6d6cc;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "SourceSansProSemibold";
   color: #221e1f;
   border-radius: 4px;
 }
@@ -1172,7 +1175,7 @@ a:hover, a:focus {
 .super-heading .field-name-field-ding-news-library .field-item a:visited {
   background-color: #a6d6cc;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "SourceSansProSemibold";
   color: #221e1f;
   border-radius: 4px;
 }
