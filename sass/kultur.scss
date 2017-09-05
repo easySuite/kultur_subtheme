@@ -8,6 +8,8 @@
 
 .html #page.ding2-site-template {
   background-image: url("../background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 
   .logo {
     margin-bottom: 83px;
@@ -17,7 +19,7 @@
       max-height: 160px;
       max-width: 315px;
       top: 0;
-      left: -49px;
+      left: 3px;
     }
   }
   .topbar {
@@ -26,6 +28,9 @@
 
   .topbar-inner {
     max-width: 1230px;
+    height: inherit;
+    left: -30px;
+    padding-left: 80px;
   }
 
   .transform-content1,
@@ -142,7 +147,7 @@ a {
 .label a {
   background-color: $label-bg-color;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "SourceSansProSemibold";
   color: $label-text-color;
   border-radius: 4px;
 
@@ -169,7 +174,7 @@ a {
 .super-heading .field-name-field-ding-news-library .field-item a:visited {
   background-color: $label-bg-color;
   text-transform: uppercase;
-  font-weight: bold;
+  font-family: "SourceSansProSemibold";
   color: $label-text-color;
   border-radius: 4px;
 }

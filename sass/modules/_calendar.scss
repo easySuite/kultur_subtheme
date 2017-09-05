@@ -56,7 +56,6 @@
   #kultur-libraries label {
     color: $label-text-color;
     text-transform: uppercase;
-    font-weight: bold;
     font-family: "SourceSansProSemibold";
   }
 
@@ -141,7 +140,7 @@
       .fc-day-number {
         background-color: #8a8a8a;
         color: #bababa;
-        font-weight: bold;
+        font-family: SourceSansProSemibold;
       }
     }
 
@@ -152,7 +151,7 @@
       .fc-day-number {
         background-color: #474747;
         color: $white;
-        font-weight: bold;
+        font-family: SourceSansProSemibold;
       }
     }
 
@@ -162,7 +161,7 @@
       .fc-day-number {
         background-color: $white;
         color: $label-text-color;
-        font-weight: bold;
+        font-family: SourceSansProSemibold;
       }
     }
 
@@ -171,14 +170,14 @@
         color: #d9d8d8;
 
         &.event-amount {
-          font-weight: bold;
           padding-right: 5px;
           color: #e1e1e1;
+          font-family: SourceSansProSemibold;
         }
       }
       &.other-info span{
         color: #93bbbf;
-        font-weight: bold;
+        font-family: SourceSansProSemibold;
       }
     }
 
@@ -187,14 +186,14 @@
         color: #e7e6e6;
 
         &.event-amount {
-          font-weight: bold;
           padding-right: 5px;
           color: #fafafa;
+          font-family: SourceSansProSemibold;
         }
       }
       &.other-info span{
         color: #196d5b;
-        font-weight: bold;
+        font-family: SourceSansProSemibold;
       }
     }
 
@@ -203,20 +202,19 @@
         color: #474747;
 
         &.event-amount {
-          font-weight: bold;
           padding-right: 5px;
           width: 20px;
+          font-family: SourceSansProSemibold;
         }
       }
       &.other-info span{
-        font-weight: bold;
+        font-family: SourceSansProSemibold;
       }
     }
 
     .fc-event-container a {
       background-color: transparent;
       border-color: transparent;
-
     }
   }
 
@@ -295,7 +293,7 @@
       border-radius: 5px;
       text-align: center;
       color: $label-text-color;
-      font-weight: bold;
+      font-family: SourceSansProSemibold;
     }
   }
 
@@ -304,13 +302,13 @@
 
     .row  {
       color: $white;
-      font-weight: bold;
+      font-family: SourceSansProSemibold;
       padding-top: 20px;
 
       .amount {
         position: absolute;
         padding-left: 10px;
-        font-weight: bold;
+        font-family: SourceSansProSemibold;
       }
 
       .title {
@@ -325,7 +323,6 @@
         a {
           color: $button-default-background;
           font-family: "SourceSansProRegular";
-          font-weight: bold;
           padding-left: 30px;
           display: inline-block;
         }

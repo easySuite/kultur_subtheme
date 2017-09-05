@@ -67,7 +67,7 @@
       background: $button-default-background;
       color: $white;
       text-transform: uppercase;
-      font-weight: bold;
+      font-family: "SourceSansProSemibold";
     }
   }
 
@@ -102,10 +102,6 @@
   .transform-sub-menu {
     display: none;
   }
-
-  // .secondary-menu-wrapper .secondary-menu {
-  //   position: relative;
-  // }
 }
 
 @include till-x-large() {
@@ -130,6 +126,6 @@
 #edit-searches {
   label a.active {
    color: $label-bg-color;
-   font-weight: bold;
+   font-family: "SourceSansProSemibold";
   }
 }

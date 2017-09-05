@@ -14,7 +14,7 @@
   .pagination a.selected {
     background-color: $label-bg-color;
     color: $label-text-color;
-    font-weight: bold;
+    font-family: "SourceSansProSemibold";
     text-transform: uppercase;
   }
 
@@ -36,7 +36,7 @@
   }
 
   .event-date{
-    font-weight: bold;
+    font-family: "SourceSansProSemibold";
   }
 
   .field-name-field-ding-news-library {
@@ -61,7 +61,6 @@
     .library a,
     .item-price {
       font-size: 18px;
-      font-weight: bold;
     }
 
     p {
@@ -73,7 +72,6 @@
 
     h2.item-title a {
       color: $label-text-color;
-      font-weight: bold;
       font-size: 16px;
       font-family: "SourceSansProSemibold";
     }
