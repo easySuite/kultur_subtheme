@@ -13,15 +13,15 @@
       .event-list-day {
         background-color: $label-bg-color;
         text-transform: uppercase;
-        font-weight: bold;
         color: $label-text-color;
+        font-family: "SourceSansProSemibold";
       }
 
       .event-list-date {
         text-transform: uppercase;
-        font-weight: bold;
         color: $label-text-color;
         font-size: 26px;
+        font-family: "SourceSansProSemibold";
 
       }
 
@@ -36,20 +36,26 @@
   }
 }
 
+#views-exposed-form-kultur-events-kultur-event-list {
+  .views-exposed-form label {
+    font-weight: normal;
+  }
+}
+
 .event {
   h1.page-title {
     font-size: 32px;
-    font-weight: bold;
     color: $list-text-color;
     text-transform: uppercase;
     margin-bottom:0;
     margin-top: 10px;
+    font-family: "SourceSansProSemibold";
   }
 
   .event-lead .field-item{
     color: $list-text-color;
     font-size: 22px;
-    font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+    font-family: "SourceSansProRegular";
   }
 
   .event-content {
@@ -89,12 +95,11 @@
 
 .views-exposed-form .form-item {
   padding: 5px 0;
-  font-family: "SourceSansProRegular","Helvetica Neue",Helvetica,"Lucida Sans Unicode",Arial,sans-serif;
+  font-family: "SourceSansProRegular";
 }
 
 .views-exposed-widget label:first-child {
   font-family: "SourceSansProSemibold";
-  font-weight: normal;
   display: block;
   font-size: 110%;
   margin-right: -10px;

@@ -11,7 +11,7 @@
     h2 {
       text-transform: lowercase;
       color: $label-text-color;
-      font-weight: bold;
+      font-family: SourceSansProSemibold;
     }
 
     #calendar{
@@ -20,7 +20,6 @@
           background-color: #d5d5d5;
           color: $label-text-color;
           text-transform: lowercase;
-          font-weight: bold;
         }
 
         .calendar-day-np {
@@ -67,12 +66,12 @@
       .event-title a {
         color: $label-bg-color;
         text-decoration: none;
-        font-weight: bold;
+        font-family: SourceSansProSemibold;
       }
     }
 
     .more-link a {
-      font-weight: bold;
+      font-family: SourceSansProSemibold;
     }
   }
 }
